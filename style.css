@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  height: 100vh;
+
+  display: grid;
+  align-content: center;
+
+  background-image: url(./assets/mountains-universe-1.png);
+  background-size: cover;
+  background-position: 30% 45%;
+  background-repeat: no-repeat;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  align-items: center;
+  height: 12.2rem;
+
+  gap: 4.3rem;
+
+  font-size: 2.2rem;
+
+  margin-left: 7.2rem;
+}
+
+#home{
+  color: #ffff;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  text-transform: none;
+  color: #C4C4CC;
+}
+
+main{
+  width: 100vw;
+  text-align: center;
+
+  font-size: 4.8rem;
+  color: #E1E1E6;
+
+  font-weight: bold;
+}
+
+button {
+  background: none;
+
+  border: 1px solid #ffff;
+  border-radius: .5rem;
+
+  padding: 1.2rem 3.2rem;
+  color: #FFFFFF;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #c4c4cc71;
+}
+
+.display{
+  display: none;
+}
+
+
+/* SECOND PAGE SESSION */
+.universe body{
+  display: grid;
+  align-content: flex-start;
+
+  background-image: url(./assets/mountains-universe02.png);
+  background-size: cover;
+  background-position: 30% 45%;
+  background-repeat: no-repeat;
+}
+
+.universe #home{
+  color: #C4C4CC;
+  font-weight: 400;
+}
+
+.universe #universe{
+  color: #ffff;
+  font-weight: bold;
+}
+
+.second_page{
+  width: 60vw;
+
+  margin-left: 10rem;
+  margin-top: 17rem;
+  text-align: start;
+}
+
+.second_page h1{
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.second_page p{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* THIRD PAGE SESSION */
+.explorer body{
+  display: grid;
+  align-content: flex-start;
+
+  background-image: url(./assets/mountains-universe-3.png);
+  background-size: cover;
+  background-position: 30% 45%;
+  background-repeat: no-repeat;
+}
+
+.explorer #home{
+  color: #C4C4CC;
+  font-weight: 400;
+}
+
+.explorer #universe{
+  color: #C4C4CC;
+  font-weight: 400;
+}
+
+.explorer #explorer{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.third_page{
+  width: 60vw;
+
+  margin-left: 10rem;
+  margin-top: 17rem;
+  text-align: start;
+}
+
+.third_page h1{
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.third_page p{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+@media (max-width: 376px){
+  nav img{
+    display: none;
+  }
+
+  nav {
+    margin-left: 2rem;
+
+    font-size: 1.2rem;
+  }
+
+  main {
+      font-size: 2.2rem;
+      width: 90vw;
+  }
+
+  /* SECOND PAGE  */
+  .second_page{
+    width: 80vw;
+  
+    margin-left: 2rem;
+    margin-top: 10rem;
+    text-align: start;
+  }
+  
+  .second_page h1{
+    font-size: 3rem;
+  }
+  
+  .second_page p{
+    font-size: 1.3rem;
+  }
+
+  /* THIRD PAGE  */
+  .third_page{
+    width: 80vw;
+  
+    margin-left: 2rem;
+    margin-top: 10rem;
+    text-align: start;
+  }
+  
+  .third_page h1{
+    font-size: 3rem;
+  }
+  
+  .third_page p{
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 476px){
+  nav img{
+    display: none;
+  }
+
+  nav {
+    margin-left: 5rem;
+
+    font-size: 1.6rem;
+  }
+
+  main {
+      font-size: 2.8rem;
+      width: 100vw;
+  }
+
+  /* SECOND PAGE  */
+
+  .second_page h1{
+    font-size: 4rem;
+  }
+  
+  .second_page p{
+    font-size: 1.8rem;
+  }
+
+  /* THIRD PAGE  */
+  
+  .third_page h1{
+    font-size: 4rem;
+  }
+  
+  .third_page p{
+    font-size: 1.8rem;
+  }
+}
